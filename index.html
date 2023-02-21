@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius Assignment</title>
+
+    <!-- tailwind file -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+  
+
+</head>
+<body>
+
+    <header class="flex justify-between	bg-emerald-200 mt-12 mx-16 rounded-lg py-2 px-5	">
+        <div>
+            <h1 class="text-5xl font-bold">Interactive</h1>
+            <h2 class="text-2xl text-slate-500">Geometry Genius</h2>
+        </div>
+        <div>
+            <button class="bg-emerald-900 px-8 py-2 text-white rounded-lg my-5">Blog</button>
+        </div>
+    </header>
+
+    <main class="grid grid-cols-4 gap-5 mt-24 mx-16 ">
+        <div class="bg-pink-500 drop-shadow-2xl border-2 rounded-lg  text-center">
+            <img class="mt-12 mx-auto mb-12 h-20"  src="images/triangle.png" alt="">
+            <h1 class="mb-2 text-2xl font-bold ">Triangle</h1>
+            <p class="mb-2">Area (A) = 0.5 * b * h</p>
+            <input class="border-2 w-1/5 px-2" type="text" placeholder="b">  cm
+            <input class="border-2 w-1/5 px-2" type="text" placeholder="h">  cm
+            <br>
+            <button class="bg-emerald-900 px-24 py-2 text-white rounded-lg mt-12 my-5">Calculate</button>
+        </div>
+        <div class="border-2 drop-shadow-2xl bg-slate-200 rounded-lg  text-center">
+            <img class="mt-12 mx-auto mb-12 w-2/6 h-1/5"  src="images/rectangle.png" alt="">
+            <h1 class="mb-2 text-2xl font-bold ">Rectangle</h1>
+            <p class="mb-2">Area (A) = w * l</p>
+            <input class="border-2 w-1/5 px-2" type="text" placeholder="w">  cm
+            <input class="border-2 w-1/5 px-2" type="text" placeholder="l">  cm
+            <br>
+            <button class="bg-emerald-900 px-24 py-2 text-white rounded-lg mt-12 my-5">Calculate</button>
+        </div>
+        <div class="border-2 drop-shadow-2xl bg-slate-200 rounded-lg  text-center">
+            <img class="mt-12 mx-auto mb-12 w-2/6 h-1/5"  src="images/parallelogram.png" alt="">
+            <h1 class="mb-2 text-2xl font-bold ">Parallelogram</h1>
+            <p class="mb-2">Area (A) = b * h</p>
+            <input class="border-2 w-1/5 px-2" type="text" placeholder="b">  cm
+            <input class="border-2 w-1/5 px-2" type="text" placeholder="h">  cm
+            <br>
+            <button class="bg-emerald-900 px-24 py-2 text-white rounded-lg mt-12 my-5">Calculate</button>
+        </div>
+
+        <div class="drop-shadow-2xl border-2 h-4/5 py-6 px-2 rounded-lg">
+            <h1 class="font-bold text-center"><u>Area Calculation</u></h1>
+        </div>
+    
+        <div class="bg-fuchsia-200 drop-shadow-2xl mt-12 border-2 rounded-lg  text-center">
+            <img class="mt-12 mx-auto mb-12 w-2/6 h-1/5"  src="images/rhombus.png" alt="">
+            <h1 class="mb-2 text-2xl font-bold ">Rhombus</h1>
+            <p class="mb-2">Area (A) = 0.5 * d1 * d2</p>
+            <input class="border-2 w-1/5 px-2" type="text" placeholder="d1">  cm
+            <input class="border-2 w-1/5 px-2" type="text" placeholder="d2">  cm
+            <br>
+            <button class="bg-emerald-900 px-24 py-2 text-white rounded-lg mt-12 my-5">Calculate</button>
+        </div>
+        <div class="drop-shadow-2xl bg-slate-200 mt-12 border-2 rounded-lg  text-center">
+            <img class="mt-12 mx-auto mb-12 w-2/6 h-1/5"  src="images/pentagon.png" alt="">
+            <h1 class="mb-2 text-2xl font-bold ">Pentagon</h1>
+            <p class="mb-2">Area (A) = 0.5 * p * b</p>
+            <input class="border-2 w-1/5 px-2" type="text" placeholder="p">  cm
+            <input class="border-2 w-1/5 px-2" type="text" placeholder="b">  cm
+            <br>
+            <button class="bg-emerald-900 px-24 py-2 text-white rounded-lg mt-12 my-5">Calculate</button>
+        </div>
+        <div class="drop-shadow-2xl mt-12 border-2 rounded-lg  text-center">
+            <img class="mt-12 mx-auto mb-12 w-2/6 h-1/5"  src="images/ellipse.png" alt="">
+            <h1 class="mb-2 text-2xl font-bold ">Ellipse</h1>
+            <p class="mb-2">Area (A) = 3.1416 * a *b </p>
+            <input class="border-2 w-1/5 px-2" type="text" placeholder="a">  cm
+            <input class="border-2 w-1/5 px-2" type="text" placeholder="b">  cm
+            <br>
+            <button class="bg-emerald-900 px-24 py-2 text-white rounded-lg mt-12 my-5">Calculate</button>
+        </div>
+    
+    </main>
+    
+
+
+    <!-- js file -->
+    <script src="js/area-calculation.js"></script>
+</body>
+</html>
